@@ -1,0 +1,106 @@
+*{
+    margin : 0;
+}
+
+.nav{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color : white;
+    align-items: center;
+}
+
+.cont-b{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play{
+    width: 95%;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+button{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.key{
+    display: flex;
+    justify-content: center;
+    width: 60px;
+}
+
+.cont-c{
+    width: 100%;
+    height: 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer{
+    background-color: black;
+    height: 300px;
+    width: 100%;
+    color: white;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cont-choice{
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.choice{
+    width: 150px;
+    height: 75%;
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+    color: black;
+    border-radius: 15px;
+}
+
+.choice-title{
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+    color: white;
+}
+
+.check{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 5px ;
+}
+
+.btn-1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
