@@ -62,35 +62,39 @@ function makeSound(key){
 
 }
 
-var nb_check = document.querySelectorAll("#accept").length;
-
-for(i = 0 ;i < nb_check; i++ ){
-    document.querySelectorAll("#accept")[i].addEventListener("click",)
-
-    getItRight();
-}
-
-function getItRight(){
-    switch (cas) {
-        case "a":
-            return true;
-            break;
-    
-        default:
-            break;
-    }
-}
+// Question pour C
 
 
-var checked = false;
+const checkbox = document.querySelectorAll(".mycheckbox");
+const checkboxLength = checkbox.length;
+const rightAnswer = document.querySelector(".r-answer-1");
+const btnC = document.querySelector('btn-a');
 
-function check(){
-    
-    if(document.get = true){
-        alert("hee");
-    }
-}
+for(i = 0; i < checkboxLength; i++){
+    checkbox[i].addEventListener("change", (event) => {
 
-var btn_a = document.getElementById("btn-a");
-btn_a.addEventListener("click", check );
+      
 
+    })}
+
+ 
+let rAnswerChecked = false;
+
+       rightAnswer.addEventListener("change", (event) => {
+        if(event.currentTarget.checked){
+            rAnswerChecked = true;
+        }else{
+            rAnswerChecked = false;
+        }
+       });
+
+       btnC.addEventListener("change", (event) => {
+        if(event.target.click){
+            alert('hello');
+        }else{
+                alert('hehe');
+        }
+       })
+
+
+  
