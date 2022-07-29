@@ -68,7 +68,18 @@ function makeSound(key){
 const checkbox = document.querySelectorAll(".mycheckbox");
 const checkboxLength = checkbox.length;
 const rightAnswer = document.querySelector(".r-answer-1");
-const btnC = document.querySelector('btn-a');
+const btnC = document.querySelector("#btn-a");
+let buttonOn = false;
+
+btnC.addEventListener("click", event => {
+  if(event.currentTarget.click && rAnswerChecked === true){
+    buttonOn = true;
+    console.log('gg');
+  }else {
+      alert('oh oh, wrong answer !');
+  }
+});
+
 
 for(i = 0; i < checkboxLength; i++){
     checkbox[i].addEventListener("change", (event) => {
@@ -88,13 +99,16 @@ let rAnswerChecked = false;
         }
        });
 
-       btnC.addEventListener("change", (event) => {
-        if(event.target.click){
-            alert('hello');
-        }else{
-                alert('hehe');
-        }
-       })
+       function cbx (obj){
+        const allTheBoxLen = document.querySelectorAll('.mycheckbox').length;
+       const allTheBox = document.querySelectorAll('.mycheckbox');
 
+       for(i = 0; i < allTheBoxLen; i++){
+          allTheBox[i].checked = false;
+       }
+       obj.checked = true;
+
+       }
+       
 
   
