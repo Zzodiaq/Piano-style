@@ -70,23 +70,25 @@ const checkboxLength = checkbox.length;
 const rightAnswer = document.querySelector(".r-answer-1");
 const btnC = document.querySelector("#btn-a");
 let buttonOn = false;
+var score = document.querySelector('.score');
+
+score = 0;
+
 
 btnC.addEventListener("click", event => {
+    
   if(event.currentTarget.click && rAnswerChecked === true){
     buttonOn = true;
-    console.log('gg');
+    alert('gg');
+    
+    console.log(score);
+    
   }else {
       alert('oh oh, wrong answer !');
   }
 });
 
 
-for(i = 0; i < checkboxLength; i++){
-    checkbox[i].addEventListener("change", (event) => {
-
-      
-
-    })}
 
  
 let rAnswerChecked = false;
@@ -110,5 +112,6 @@ let rAnswerChecked = false;
 
        }
        
+
 
   
